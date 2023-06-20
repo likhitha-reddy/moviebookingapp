@@ -6,6 +6,7 @@ import { LoginUser } from "../../apicalls/users";
 import { useDispatch } from "react-redux";
 import { HideLoading, ShowLoading } from "../../redux/loadersSlice";
 
+
 function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -36,7 +37,7 @@ function Login() {
   return (
     <div className="flex justify-center h-screen items-center bg-primary">
       <div className="card p-3 w-400">
-        <h1 className="text-xl mb-1">SHEYMOVIES - LOGIN</h1>
+        <h1 className="text-xl mb-1">MovieGo - LOGIN</h1>
         <hr />
         <Form layout="vertical" className="mt-1" onFinish={onFinish}>
           <Form.Item
